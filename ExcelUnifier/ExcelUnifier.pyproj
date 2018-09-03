@@ -11,6 +11,13 @@
     <OutputPath>.</OutputPath>
     <Name>ExcelUnifier</Name>
     <RootNamespace>ExcelUnifier</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Environment>
+    </Environment>
+    <InterpreterArguments>
+    </InterpreterArguments>
+    <CommandLineArguments>--p "C:\Users\JhonRContreras\OneDrive - saigroundservices\FACTURACION SERVICIOS ESPECIALES  JUNIO 1 A AGOSTO 26 2018"</CommandLineArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +29,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ExcelUnifier.py" />
+    <Compile Include="Service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServicesToExcel.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
