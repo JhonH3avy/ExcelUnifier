@@ -32,7 +32,7 @@ def main():
     if '--o' in flags:
         output_path = flags['--o']
     else:
-        output_path = path.dirname(__file__) + 'services.xlsx'
+        output_path = 'Servicios.xlsx'
        
     total_services = process_directory(root_path)
     unified_workbook = ServicesToExcel.create_unified_workbook()
@@ -136,6 +136,8 @@ def get_dict_equivalent(columnName):
         'NO VUELO':'flight_number',
         'NOMBRE PASAJERO':'pax_name',
         'TERMINAL':'service_terminal',
+        'AREA':'service_terminal',
+        'N° VUELO':'flight_number',
         'WCOB':'WCOB',
         'WCMP':'WCMP',
         'WCHS':'WCHS',
